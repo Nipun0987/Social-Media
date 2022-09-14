@@ -1,5 +1,5 @@
 <center>
-<div class="container mt-20px">
+    <div class="container mt-20px">
         <h>Get The App.</h>
         <div class="mt-10px">
             <a href="https://apps.apple.com/in/app/instagram/id389801252">
@@ -25,5 +25,30 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 
+<!-- <script>
+    $('.confirm,.password,.username,.phone,.name').on('keyup', function() {
+        if (!checker()) {
+            $('.submit').prop('disabled', true);
+        } else {
+            $('.submit').prop('disabled', false);
+        }
+    });
+
+    function checker() {
+        if (!($('.username').length >= 2 && $('.username').length <= 100) ||
+            !($('.phone').length = 10 ||
+                !($('.name').length >= 2 && $('.name').length <= 256) ||
+                !($('.password').length >=
+                    8 && $('.password').length <= 20) || !($('.confirm').length >=
+                    8 && $('.confirm').length <= 20) || !($('.password').val() ===
+                    $('.confirm').val()))) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script> -->
+
 </body>
+
 </html>
