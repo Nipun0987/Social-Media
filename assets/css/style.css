@@ -1,0 +1,17 @@
+.h_line {
+  margin: 20px 30px 18px;
+}
+
+.line {
+  height: 1px;
+  position: relative;
+  top: 1px;
+  background-color: black;
+  flex-grow: 1;
+}
+
+.h_face {
+  border: 0px;
+  background-color: #fff;
+  color: #385185;
+}/*# sourceMappingURL=style.css.map */
