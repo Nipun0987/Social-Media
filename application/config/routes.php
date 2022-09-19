@@ -54,5 +54,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['default_controller'] = 'superadmin_controller/index';
 $route['signup'] = 'superadmin_controller/signup';
 $route['home'] = 'home_controller/home';
+$route['save'] = 'superadmin_controller/save';
 
 $route['404_override'] = '';

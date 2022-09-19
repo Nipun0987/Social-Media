@@ -11,7 +11,7 @@ if ($error_msg) {
 <center>
     <div class="bg-light border border-secondary h-auto w-25 mt-45px h_first">
 
-        <img src="assets/images/logo_1.png" class="mt-40px" alt="">
+        <img src="<?php echo base_url() ?>assets/images/logo_1.png" class="mt-40px" alt="">
 
         <div class="h_face_1">Sign up to see photos and videos from your friends.</div>
         <a href="https://www.facebook.com/login.php">
@@ -42,7 +42,7 @@ if ($error_msg) {
         </div>
 
         <div class="m-4">
-            <input type="username" class="form-control" name="email" placeholder="Enter Email" required>
+            <input type="username" class="form-control" name="user_name" placeholder="Enter Email" required>
         </div>
 
         <div class="m-4">
@@ -63,8 +63,7 @@ if ($error_msg) {
     <div class="bg-light border border-secondary h-auto w-25 my-12px h_first">
         <div class="my-15px">
             Have an account?
-            <a href="<?php echo (base_url()) ?>" <?php if ($page == 'Log In') : echo 'active';
-                                                    endif; ?>>
+            <a href="<?php echo (base_url()) ?>">
                 <button type="submit" onclick="myfun()" class="border-0 bg-transparent text-primary">Log In</button>
             </a>
         </div>
