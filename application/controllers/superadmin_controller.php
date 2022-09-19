@@ -26,4 +26,10 @@ class Superadmin_controller extends Core_Controller
         $this->load->view('superadmin/signup', $data);
         $this->load->view('superadmin/partials/footer', $data);
     }
+
+    public function signup_post(){
+        $form_data = $this->input->post();
+
+        var_dump($form_data['first_name']);
+    }
 }

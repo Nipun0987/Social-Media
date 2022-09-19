@@ -53,5 +53,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['translate_uri_dashes'] = FALSE;
 $route['default_controller'] = 'superadmin_controller/index';
 $route['signup'] = 'superadmin_controller/signup';
+$route['home'] = 'home_controller/home';
 
 $route['404_override'] = '';

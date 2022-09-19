@@ -1,5 +1,5 @@
 <center>
-    <div class="container mt-20px">
+    <div class="container my-20px">
         <h>Get The App.</h>
         <div class="mt-10px">
             <a href="https://apps.apple.com/in/app/instagram/id389801252">
@@ -11,6 +11,28 @@
         </div>
     </div>
 </center>
+
+<footer>
+    <div class="bg-warning d-flex justify-content-center h-150px foot">
+        <div class="row">
+            <div class="col d-flex justify-content-center">Meta</div>
+            <div class="col d-flex justify-content-center">Blogs</div>
+            <div class="col d-flex justify-content-center">About</div>
+            <div class="col d-flex justify-content-center">Jobs</div>
+            <div class="col d-flex justify-content-center">Help</div>
+            <div class="col d-flex justify-content-center">API</div>
+            <div class="col d-flex justify-content-center">Privacy</div>
+            <div class="col d-flex justify-content-center">Terms</div>
+            <div class="col d-flex justify-content-center">Top Accounts</div>
+            <div class="col d-flex justify-content-center">Hashtags</div>
+            <div class="col d-flex justify-content-center">Locations</div>
+            <div class="col d-flex justify-content-center">Instagram Lite</div>
+            <div class="col d-flex justify-content-center">Contact Uploading & Non-Users</div>
+        </div>
+
+    </div>
+</footer>
+
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>

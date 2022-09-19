@@ -1,3 +1,23 @@
+<?php
+$success_msg = $this->session->flashdata('success_msg');
+$error_msg = $this->session->flashdata('error_msg');
+
+if ($success_msg) {
+?>
+    <div class="alert alert-success">
+        <?php echo $success_msg; ?>
+    </div>
+<?php
+}
+if ($error_msg) {
+?>
+    <div class="alert alert-danger">
+        <?php echo $error_msg; ?>
+    </div>
+<?php
+}
+?>
+
 
 <center>
     <div class="bg-light border border-secondary h-auto w-25 mt-45px h_first">
@@ -21,7 +41,7 @@
             <div class="line"></div>
         </div>
 
-        <a href="https://www.facebook.com/login.php" >
+        <a href="https://www.facebook.com/login.php">
             <button type="submit" class="h_face">
                 <i class="fa-brands fa-facebook text_primary"></i>
                 <span>Log in with Facebook</span>
