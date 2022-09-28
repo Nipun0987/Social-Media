@@ -33,20 +33,24 @@ if ($error_msg) {
         echo form_open('superadmin_controller/signup_post');
         ?>
 
+        <h4>
+            <?php echo $this->session->flashdata('errors'); ?>
+        </h4>
+
         <div class="m-4">
-            <input type="phone" class="form-control" name="phone_number" placeholder="Enter Phone No." required>
+            <input type="phone" class="form-control" name="phone_number" placeholder="Enter Phone No." value="<?php echo set_value('phone_number'); ?>"  required>
         </div>
 
         <div class="m-4">
-            <input type="name" class="form-control" name="first_name" placeholder="First Name" required>
+            <input type="name" class="form-control" name="first_name" placeholder="First Name"  value="<?php echo set_value('first_name'); ?>" required>
         </div>
 
         <div class="m-4">
-            <input type="username" class="form-control" name="user_name" placeholder="Enter Email" required>
+            <input type="username" class="form-control" name="user_name" placeholder="Enter Email"  value="<?php echo set_value('user_name'); ?>" required>
         </div>
 
         <div class="m-4">
-            <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
+            <input type="password" class="form-control" name="password" placeholder="Enter Password"  value="<?php echo set_value('password'); ?>" required>
         </div>
 
         <p class="p_sign"> People who use our service may have uploaded your contact information to Instagram.

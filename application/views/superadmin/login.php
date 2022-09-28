@@ -24,15 +24,21 @@ if ($error_msg) {
 
         <img src="assets/images/logo_1.png" class="mt-40px" alt="">
 
-        <form>
-            <div class="m-4">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
-            </div>
-            <div class="m-4">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
-            </div>
-            <button type="submit" class="btn btn-primary w-290px">Log In</button>
-        </form>
+
+        <?php echo form_open('auth_controller/login_post'); ?>
+
+        <div class="m-4">
+            <input type="text" name="user_name" class="form-control" placeholder="Enter Username" value="<?php echo set_value('user_name'); ?>">
+
+        </div>
+        <div class="m-4">
+            <input type="password" name="password" class="form-control" placeholder="Enter Password" id="txtPassword" value="<?php echo set_value('password') ?>">
+
+        </div>
+        <button type="submit" class="btn btn-primary w-290px">Log In</button>
+
+
+        <?php echo form_close(); ?>
 
 
         <div class="h_line ">
@@ -53,8 +59,7 @@ if ($error_msg) {
         <div class="my-15px">
             Don't have an account?
 
-            <a href="<?php ?>signup" <?php if ($page == 'Signup') : echo 'active';
-                                        endif; ?>>
+            <a href="<?php ?>signup">
                 <button type="submit" onclick="myfun()" class="border-0 bg-transparent text-primary">Sign Up</button>
             </a>
         </div>

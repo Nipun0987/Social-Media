@@ -1,52 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/regular.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/rkj.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+    <div class="navigation">
+        <div class="logo">
+            <a class="no-underline" href="#">
+                Instagram
+            </a>
+        </div>
+        <div class="navigation-search-container">
+            <i class="fa fa-search"></i>
+            <input class="search-field" type="text" placeholder="Search">
+            <div class="search-container">
+                <div class="search-container-box">
+                    <div class="search-results">
 
-                <table class="table table-bordered table-striped">
-
-
-                    <tr>
-                        <th colspan="2">
-                            <h4 class="text-center">Users Details</h3>
-                        </th>
-
-                    </tr>
-
-                    <tr>
-                        <td>Name</td>
-                        <td><?php echo $val['first_name'];  ?></td>
-                    </tr>
-                    <tr>
-                        <td>User Email</td>
-                        <td><?php echo $val['email'];  ?></td>
-                    </tr>
-                    <tr>
-                        <td>Phone Number</td>
-                        <td><?php echo  $val['phone_number'];  ?></td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding-top: 20px;"> </td>
-                    </tr>
-
-                </table>
-
-
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- <a href="<?php echo base_url('user/user_logout'); ?>"> <button type="button" class="btn-primary">Logout</button></a> -->
+        <div class="navigation-icons">
+            <a href="https://instagram.com/mimoudix" target="_blank" class="navigation-link">
+                <i class="far fa-compass"></i>
+            </a>
+            <a class="navigation-link notifica">
+                <i class="far fa-heart">
+                    <div class="notification-bubble-wrapper">
+                        <div class="notification-bubble">
+                            <span class="notifications-count">99</span>
+                        </div>
+                    </div>
+                </i>
+            </a>
+            <a href="https://instagram.com/mimoudix" class="navigation-link">
+                <i class="far fa-user-circle"></i>
+            </a>
+            <a href="https://instagram.com/mimoudix" id="signout" class="navigation-link">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
     </div>
+
+    <!-- scroll down test--->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- scroll down test--->
+
+    <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/bootstrap.bundle.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/all.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/brands.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/fontawesome.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/regular.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/solid.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+    <!-- <script>
+    $('.confirm,.password,.username,.phone,.name').on('keyup', function() {
+        if (!checker()) {
+            $('.submit').prop('disabled', true);
+        } else {
+            $('.submit').prop('disabled', false);
+        }
+    });
+
+    function checker() {
+        if (!($('.username').length >= 2 && $('.username').length <= 100) ||
+            !($('.phone').length = 10 ||
+                !($('.name').length >= 2 && $('.name').length <= 256) ||
+                !($('.password').length >=
+                    8 && $('.password').length <= 20) || !($('.confirm').length >=
+                    8 && $('.confirm').length <= 20) || !($('.password').val() ===
+                    $('.confirm').val()))) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script> -->
+
 </body>
 
 </html>
