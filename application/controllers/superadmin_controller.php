@@ -10,7 +10,7 @@ class Superadmin_controller extends Core_Controller
         parent::__construct();
         $this->load->model('auth_model');
         $this->load->model('superadmin_model');
-        // $this->load->model('common_model');
+        $this->load->model('common_model');
         // $this->load->model('file_model');
         // $this->load->model('tpa_model');
         // $this->load->model('insurance_model');

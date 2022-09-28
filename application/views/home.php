@@ -21,14 +21,14 @@
 
 <body>
 
+    <!-- navbar start -->
     <div class="navigation">
         <div class="logo">
-            <a class="no-underline" href="#">
-                Instagram
-            </a>
+            <img src="<?php echo base_url() ?>assets/images/logo_1.png" class="" alt="">
+
         </div>
         <div class="navigation-search-container">
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search "></i>
             <input class="search-field" type="text" placeholder="Search">
             <div class="search-container">
                 <div class="search-container-box">
@@ -40,10 +40,10 @@
         </div>
         <div class="navigation-icons">
             <a href="https://instagram.com/mimoudix" target="_blank" class="navigation-link">
-                <i class="far fa-compass"></i>
+                <i class="w-50px mx-10px far fa-compass"></i>
             </a>
             <a class="navigation-link notifica">
-                <i class="far fa-heart">
+                <i class="w-50px mx-10px far fa-heart">
                     <div class="notification-bubble-wrapper">
                         <div class="notification-bubble">
                             <span class="notifications-count">99</span>
@@ -52,17 +52,46 @@
                 </i>
             </a>
             <a href="https://instagram.com/mimoudix" class="navigation-link">
-                <i class="far fa-user-circle"></i>
+                <i class="w-50px mx-10px far fa-user-circle"></i>
             </a>
-            <a href="https://instagram.com/mimoudix" id="signout" class="navigation-link">
-                <i class="fas fa-sign-out-alt"></i>
+            <a href="<?php base_url() ?>auth_controller/index" id="signout" class="navigation-link">
+                <i class="w-50px mx-10px fas fa-sign-out-alt"></i>
             </a>
         </div>
     </div>
+    <!-- navbar end -->
 
-    <!-- scroll down test--->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- scroll down test--->
+    <table id="example0" class="table display">
+        <thead>
+            <tr>
+                <td>Sr.No</td>
+                <td>First Name</td>
+                <td>User Name</td>
+                <td>Phone Number</td>
+                <!-- <td>State</td> -->
+                <!-- <td>Pincode</td> -->
+                <!-- <td>View Full Details</td> -->
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $i = 1;
+            foreach ($users as $user) {
+            ?>
+                <tr>
+                    <td><?php echo $i++; ?></td>
+                    <td><?php echo $user->first_name; ?></td>
+                    <td><?php echo $user->user_name; ?></td>
+                    <td><?php echo $user->phone_number; ?></td>
+                </tr>
+
+            <?php } ?>
+        </tbody>
+    </table>
+
+
+
+
 
     <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
     <script src="<?php echo base_url() ?>assets/js/bootstrap.bundle.js"></script>

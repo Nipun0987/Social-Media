@@ -22,7 +22,7 @@ if ($error_msg) {
 <center>
     <div class="bg-light border border-secondary h-auto w-25 mt-45px h_first">
 
-        <img src="assets/images/logo_1.png" class="mt-40px" alt="">
+        <img src="<?php echo base_url() ?>assets/images/logo_1.png" class="mt-40px" alt="">
 
 
         <?php echo form_open('auth_controller/login_post'); ?>
