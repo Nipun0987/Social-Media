@@ -27,11 +27,11 @@ class Auth_model extends CI_Model
     //login
     public function index()
     {
-        $data['user_name'] = trim($this->input->post('user_name'));
+        $data['user_name'] = $this->input->post('user_name');
         $data['password'] = $this->input->post('password');
         $user = get_table_data($data['user_name'], 'user_name', 'user', 'user_name')[0];
 
-
+       
         if (!empty($user)) {
 
             if ($user->is_active == 0) {
@@ -39,26 +39,7 @@ class Auth_model extends CI_Model
                 return false;
             }
 
-            if ($user->user_id == 1) {
-                $user_data = array(
-                    'user_id' => $user->user_id,
-                    'user_name' => $user->user_name,
-                    'first_name' => $user->first_name,
-                    'phone_number' => $user->phone_numer,
-                    // 'user_email' => $user->email,
-
-                );
-            } else {
-                $user_data = array(
-                    'user_id' => $user->user_id,
-                    'user_name' => $user->user_name,
-                    'first_name' => $user->first_name,
-                    'phone_number' => $user->phone_numer,
-                    // 'user_email' => $user->email,
-                );
-            }
-            $this->session->set_userdata($user_data);
-            return true;
+            
         } else {
             $this->session->set_flashdata('error');
             return false;

@@ -46,7 +46,7 @@ if ($error_msg) {
         </div>
 
         <div class="m-4">
-            <input type="username" class="form-control" name="user_name" placeholder="Enter Email"  value="<?php echo set_value('user_name'); ?>" required>
+            <input type="username" class="form-control" name="user_name" placeholder="Enter Username"  value="<?php echo set_value('user_name'); ?>" required>
         </div>
 
         <div class="m-4">
